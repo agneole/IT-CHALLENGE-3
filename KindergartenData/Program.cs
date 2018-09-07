@@ -14,6 +14,7 @@ namespace KindergartenData
 
         public static void Main(string[] args)
         {
+            //test
             DownloadFile(_path, _fileName);
 
             var kindergartens = GetKindergartens(_fileName);
