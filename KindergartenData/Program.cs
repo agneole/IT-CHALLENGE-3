@@ -14,7 +14,6 @@ namespace KindergartenData
 
         public static void Main(string[] args)
         {
-            //test2
             DownloadFile(_path, _fileName);
 
             var kindergartens = GetKindergartens(_fileName);
@@ -31,14 +30,12 @@ namespace KindergartenData
 
             //SURASKITE, KURIOS KALBOS DARŽELIAI TURI DAUGIAUSIAI LAISVŲ VIETŲ PROCENTAIS:
             var percent = GetPercentOfFreeSpacesGroupedByLanguage(kindergartens);
-
             WriteDataToFile(percent, "task2.txt");
 
             //IŠRINKTI VISUS DARŽELIUS, KURIUOSE YRA NUO 2 IKI 4 LAISVŲ VIETŲ. SUGRUPUOTI GAUTUS DARŽELIUS PAGAL PAVADINIMĄ IR IŠRŪŠIUOTI NUO Z IKI A.
             var answer = GetKindergartensWhereFreeSpaceIsBetween2And4(kindergartens);
             WriteDataToFile(answer, "task3.txt");
 
-            Console.WriteLine("Done");
             Console.ReadLine();
         }
 
